@@ -24,7 +24,7 @@ This repository contains code that can be used to visualize tens of thousands of
 
 See the [change log](https://github.com/YaleDHLab/pix-plot/wiki/Change-Log) for recent updates.
 
-![App preview](./pixplot/web/assets/images/preview.png?raw=true)
+![App preview](./img_readme.png?raw=true)
 
 ## Dependencies
 
