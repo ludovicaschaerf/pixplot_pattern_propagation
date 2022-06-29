@@ -1,3 +1,23 @@
+# Pixplot for pattern propagation
+
+This repository is modification of the original Pixplot published by DHlab Yale. This repo, published with github pages [here](https://ludovicaschaerf.github.io/pixplot_pattern_propagation/) and part of the larger website published [here](https://patternclusters-api-heroku.herokuapp.com/), was created using the modified pixplot library which can be found [here](https://github.com/ludovicaschaerf/pix-plot).
+
+The library can be installed as:
+
+```bash
+pip uninstall pixplot
+pip install https://github.com/ludovicaschaerf/pix-plot/archive/master.zip
+```
+
+## Using the Cini data
+
+To reproduce the results on this website, you can use the files provided in the `input/` folder. Following the rest of the tutorial will help set up the library.
+Once the library is working, you can call pixplot as follows:
+```python
+pixplot --manifest "./input/manifest.json" --metadata "./input/metadata.csv" --mapping "./iiif2vec.pkl"
+```
+This should create the same visualisation on this github page. If the manifest file does not work, we suggest to download the images of the manifest separately and call pixplot with the argument --images "path/to/image/folder" instead.
+
 # PixPlot
 
 This repository contains code that can be used to visualize tens of thousands of images in a two-dimensional projection within which similar images are clustered together. The image analysis uses Tensorflow's Inception bindings, and the visualization layer uses a custom WebGL viewer.
